@@ -46,7 +46,7 @@ jobs:
             sudo docker run -d \
               --name myapp1 \
               --restart unless-stopped \
-              -p 80:80 \
+              -p 8081:8081 \
               ${{ secrets.DOCKER_USERNAME }}/myapp1:latest
 
             sudo docker ps
